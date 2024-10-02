@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up!</title>
+</head>
+<link rel="stylesheet" type="text/css" th:href="@{/signup.css}"/>
+<body>
+	
+	<form action="/signUpUser" method="post" class="formcontainer">
+	<h2>SignUp</h2>
+	<div>
+	<label for="username">UserName:</label>
+	<input type="text" id="username" name="username">
+	</div>
+	<div>
+	<label for="pass">Password:</label>
+	<input type="text" id="pass" name="password">
+	</div>
+	<div>
+	<label for="mail">Email:</label>
+	<input type="text" id="mail" name="email">
+	</div>
+	<div>
+	<label for="gen">Gender</label>
+	<input type="radio" id="gen" name="gender" value="male">Male
+	<input type="radio" id="gen" name="gender" value="female">Female
+	<input type="radio" id="gen" name="gender" value="other">Other
+	</div>
+	<div>
+		<input type="submit" value="SIGN UP" class="butt"
+		style="background-color:#48cfcb;
+	padding:8px;
+	border-radius:5px;
+	margin-top:10px;
+	color:black;">
+	</div>
+	</form>
+	
+	
+</body>
+</html>
